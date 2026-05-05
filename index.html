@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>3‑Würfel‑Würfelspiel</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js für 3D‑Würfel -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Auswahlmenü -->
+    <div id="menu">
+      <h1>Wähle Deinen Würfel</h1>
+      <button id="dice1" class="dice-btn green">Würfel 1 (1, 2)</button>
+      <button id="dice2" class="dice-btn yellow">Würfel 2 (3, 4)</button>
+      <button id="dice3" class="dice-btn blue">Würfel 3 (5, 6)</button>
+    </div>
+
+    <!-- Würfelergebnisse -->
+    <div id="result" style="display: none;">
+      <h2>Ergebnis</h2>
+      <div id="roll-result"></div>
+      <button id="reset">Zurück zum Menü</button>
+      <div id="dice-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
